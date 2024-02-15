@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+span{
+    font-size: 0.9rem;
+    color: #757373;
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+p{
+    color: #2b2b2b;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #0054A5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+nav img{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: #fbfbfb;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover{
+    color: #2b2b2b;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#home{
+    background: url('aset/tes.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+#home h1{
+    color: #fbfbfb;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+
+    
+}
+
+#home p{
+    width: 50%;
+    color: #fbfbfb;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#keunggulan{
+    display: flex;
+    padding: 40px;
+    align-items: center;
+}
+
+#keunggulan h3{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#keunggulan p{
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#enroll{
+    padding: 8vw 8vw 10vw;
+    text-align: center;
+    background: #0054A5;
+
+}
+
+#enroll .enroll-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#enroll .enrolled{
+    text-align: start;
+    background: #f9f9ff;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#enroll .enrolled img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#enroll .enrolled .details{
+    padding: 15px 15px 0 15px;
+}
+
+#enroll h2{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #fbfbfb;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+
+}
+
+#enroll .enroll-box .enrolled .details h5{
+    font-size: 1.3rem;
+}
+
+#enroll .enroll-box .enrolled .details a{
+    color: #0054A5;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #fbfbfb;
+    line-height: 25px;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    text-decoration: none;
+}
+
+#enroll .enroll-box .enrolled .details a:hover{
+    color: #fbfbfb;
+    background: #0054A5;
+    transition: 0.3s;
+}
+
+#popular{
+    padding: 8vw 8vw 10vw;
+    text-align: center;
+}
+
+#popular .popular-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#popular .populars{
+    text-align: start;
+    background: #f9f9ff;
+    height: 100%;
+    padding: 20px;
+    border: 2.5px solid #0054A5;
+    border-radius: 10px;
+    position: relative;
+}
+
+#popular .populars img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#popular .populars .detail{
+    padding: 15px 15px 0 15px;
+}
+
+#popular h2{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #2b2b2b;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+#popular .popular-box .populars .detail h5{
+    font-size: 1.3rem;
+}
+
+#popular .popular-box .populars .detail a{
+    color: #0054A5;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #fbfbfb;
+    line-height: 25px;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    text-decoration: none;
+}
+
+#popular .popular-box .populars .detail a:hover{
+    color: #fbfbfb;
+    background: #0054A5;
+    transition: 0.3s;
+}
